@@ -1,0 +1,44 @@
+ //cDataType=CdbfHead.vec_RecordDescription[j]->getFieldDataType();
+            //cFieldPrecision=CdbfHead.vec_RecordDescription[j]->getFieldPrecision();
+            //cout<<"field"<<j<<" data type: "<<(int)cDataType<<endl;
+//            switch (cDataType) {
+//                case 'B':
+//                case 'C':
+//                case 'D':
+//                case 'G':
+//                case 'L':
+//                case 'M':
+//                    inDbfFile.read(acTempFieldValue,iOneFieldLength);
+//                    pDbfValue->setDbfValue(acTempFieldValue,iOneFieldLength);
+//                    pDbfRecord->obtainCdbfPointer(pDbfValue); //行记录对象获取该字段对象的指针
+//                break;
+//                case 'N':
+//                inDbfFile.read(acTempFieldValue,iOneFieldLength);
+//                    if(cFieldPrecision==iOneFieldLength)  //精度与长度相等，说明没有小数点位，为整型
+//                    {
+//                        char * pInt=new char[iOneFieldLength];
+//                        for(int i=0;i<iOneFieldLength;i++)
+//                        {
+//                            pInt[i]=acTempFieldValue[i];
+//                        }
+//                        string str(pInt);
+//                        iTempFieldValue=atoi(str.c_str());//*((int *)acTempFieldValue);
+                        
+//                        pDbfValue->setDbfValue(iTempFieldValue);
+//                        pDbfRecord->obtainCdbfPointer(pDbfValue);
+//                        delete [] pInt;
+//                    }
+//                    else {    //否则即为浮点型
+//                        char * pDouble=new char[iOneFieldLength];
+//                        for(int i=0;i<iOneFieldLength;i++)
+//                        {
+//                            pDouble[i]=acTempFieldValue[i];
+//                        }
+//                        string str(pDouble);
+//                        dTempFieldValue=atof(str.c_str());//*((double *)acTempFieldValue);                       
+//                        pDbfValue->setDbfValue(dTempFieldValue);
+//                        pDbfRecord->obtainCdbfPointer(pDbfValue);
+//                        delete []pDouble;
+//                    }
+//                break;
+//            }
